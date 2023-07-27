@@ -1,0 +1,11 @@
+@function GetImage($img) {
+    @return url('../../Assets/Images/#{$img}');
+}
+
+@mixin GenerateCircle($size, $radius, $margin , $color) {
+    height: $size;
+    width: $size;
+    margin: $margin;
+    border-radius: $radius;
+    background-color: $color;
+}
